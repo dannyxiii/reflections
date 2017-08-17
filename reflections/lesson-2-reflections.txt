@@ -13,15 +13,22 @@ change?
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-  When you are trying to add different features, or different iterations of a project. This helps you keep these different code changes organized.
+  When you are trying to add different features, or different iterations of a project. This helps you keep these different code changes organized. You will also be able to merge branches later on if you find an experimental branch is actually something you want to include in the master.
+
+  "Context switching"
 
 How do the diagrams help you visualize the branch structure?
+  They allow you to see the flow of master and the details of each branch you create. It also allows you to see any unreachable commits if you check them out, however you will not be able to see them using log. Whilst you are working on unlisted checkouts you may make it into  a branch using the
+  git checkout -b new-branch-name
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+  Merging two branches together combines the functionality of both with each other. This is represented as it is in the diagram because its two end points/branches coming together into a new commit. Usually this is done by merging a branch into the master.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+  Auto merging can create conflicts in that some of the changes may not make sense.
+  Manual merges will show you every conflict and allow you to respond to them appropriately, reducing the amount of bugs that may get introduced when compared to auto merging.
 
 Notes:
 
@@ -31,3 +38,11 @@ http://udacity.github.io/git-styleguide/1
 might have to make changes to configuration of git using:
 git config --global push.default upstream
 git config --global merge.conflictstyle diff3
+
+
+git commands:
+log shows branches as well
+    git log --graph --oneline master coins
+
+git checkout -b new-branch-name
+  shortcut to allow you to create a new branch in any current checkout
