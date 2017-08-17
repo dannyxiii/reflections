@@ -1,0 +1,7 @@
+Lesson 1
+Using diff or sdiff to spot the differences between two files is simpler than by hand.
+Helps sort out any bugs that may be there from previous changes and saves time.
+
+
+Darn... lost all my notes :(
+Oh well. 
