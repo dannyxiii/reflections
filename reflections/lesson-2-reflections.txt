@@ -46,3 +46,8 @@ log shows branches as well
 
 git checkout -b new-branch-name
   shortcut to allow you to create a new branch in any current checkout
+
+
+Some notes from other users:
+https://github.com/maecabre/reflections
+https://github.com/shub1295/reflections
