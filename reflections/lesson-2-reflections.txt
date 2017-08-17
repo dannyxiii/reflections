@@ -22,3 +22,12 @@ the diagram the way we do?
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Notes:
+
+There is a style guide for commits located here:
+http://udacity.github.io/git-styleguide/1
+
+might have to make changes to configuration of git using:
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
