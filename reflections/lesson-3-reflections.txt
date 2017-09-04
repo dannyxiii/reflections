@@ -4,12 +4,12 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    You want to use a remote repository when you are working with multiple people. It keeps changes separate and allows you to fetch and see changes before merging and committing them to the master on github
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
@@ -19,14 +19,22 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    Allows you to see any merge conflicts that may come up, and keeps your work separate.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Email or dropbox could work, but it would be much harder to keep track of changes, and sharing changes whilst having different branches of code could be difficult as well.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    We would want to make a separate branch when we do not want to break master
+    this allows us to make changes as we please and then later create a pull 
+    request to merge into master. The challenge with this is keeping the now branch up to date with any changes being made to master. The benefit of changing master directly keeps us more in line with changes that are occurring on that branch.
+
+    ** correction You could make your changes directly to the master branch in your fork, but when contributing to a public repository, it’s standard practice to make the changes in a non-master branch within the fork. This way, you can easily keep your master branch up-to-date with master of the original repository, and merge changes from master into your branch when you are ready.
+
+
+Notes:
+git pull origin master = git fetch origin + git merge master origin/master
